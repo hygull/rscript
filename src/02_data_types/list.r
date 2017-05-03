@@ -56,6 +56,3 @@ print(random.list)
 
 # [[4]]
 # [1] "C"      "Python" "R"      "Go"    
-
-
-
