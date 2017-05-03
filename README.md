@@ -21,13 +21,12 @@ It was cretaed at University of Auckland in Auckland(New zealand) and is current
 
 1)	The core of R is an interpreted computer language which allows
 
-* Branching
-* Looping
-* Modular programming using functions
+	* Branching
+	* Looping
+	* Modular programming using functions
 
 2)	R allows integration with the procedures written in the C, C++, .Net, Python or FORTRAN languages for efficiency.
 
-3)	R is world
 #### Evolution
 
 R made it first appearance in 1993.	
@@ -53,9 +52,9 @@ source code archive.
 
 *	Windows users visit [here](https://cran.r-project.org/bin/windows/base/)
 *	MAC OS X users visit [here](https://cran.r-project.org/bin/linux/)
-*	Linux users visit [here](https://cran.r-project.org/bin/linux/) 
+*	Linux users visit [here](https://cran.r-project.org/bin/linux/) or
 
-	or you can run the folowing command
+	you can run the folowing command
 ```
 yum install R
 ```
@@ -89,9 +88,58 @@ paste(message,name,sep=" : ")
 # [1] "Hello programmers. : I am Rishikesh."
 ```
 
+### Data types
+
+Variables are nothing but reserved memory locations to store values.
+
+There are many types of R-Objects. The frequently used ones are 
+*	Arrays
+*	Lists
+*	Matrices
+*	Vectors
+*	Factors
+*	Data frames
+
+The simplest of these objects is **vector object** and there are six data types of these atomic vectors also termed as *six classes of vectors*.
+
+1)	Numeric
+2)	Integer
+3)	Complex
+4)	Character
+5)	Logical
+6)	Raw
 
 
+# Notes
 
+> I am following the Google's naming convention for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
+
+```{r }
+# {
+# 	'created_on' : '3 May 2017', 
+# 	'aim_of_rscript' : 'printing messages in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+message <- "Hello programmers."
+name <- "I am Rishikesh."
+
+print(message)
+
+print(name)
+
+#Combined message
+paste(message,name,sep=" ")
+
+#message with separator :
+paste(message,name,sep=" : ")
+
+#...................OUTPUT.....................
+# [1] "Hello programmers."
+# [1] "I am Rishikesh."
+# [1] "Hello programmers. I am Rishikesh."
+# [1] "Hello programmers. : I am Rishikesh."
+```
 
 
 
