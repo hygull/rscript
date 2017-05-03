@@ -10,8 +10,8 @@ R is a programming language and software environment for
 
 #### Creators of R
 
-* Ross Ihaka
-* Robert Gentlemen
+* Ross Ihaka (wiki...)[https://en.wikipedia.org/wiki/Ross_Ihaka]
+* Robert Gentlemen (wiki...)[https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)]
 
 #### Where was it created?
 
@@ -109,10 +109,7 @@ The simplest of these objects is **vector object** and there are six data types 
 5)	Logical
 6)	Raw
 
-
-# Notes
-
-> I am following the Google's naming convention for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
+##### Vectors
 
 ```{r }
 # {
@@ -141,5 +138,75 @@ paste(message,name,sep=" : ")
 # [1] "Hello programmers. : I am Rishikesh."
 ```
 
+##### Lists
+
+A list is an R-Object which can contain many different types elements inside it like vectors, functions and even another list inside it.
+
+```{r }
+# {
+# 	'created_on' : '3 May 2017', 
+# 	'aim_of_rscript' : 'using lists in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+#...................................................
+
+#Google's naming convention for identifiers
+integers.list = list(1,2,5,7,8,-6,4,8,34,67)	
+
+random.list = list("Rishikesh", 24, 1992.67, c("C", "Python", "R", "Go"))
+
+print(integers.list)
+
+print(random.list)
+
+#....................OUTPUT.........................
+# [[1]]
+# [1] 1
+
+# [[2]]
+# [1] 2
+
+# [[3]]
+# [1] 5
+
+# [[4]]
+# [1] 7
+
+# [[5]]
+# [1] 8
+
+# [[6]]
+# [1] -6
+
+# [[7]]
+# [1] 4
+
+# [[8]]
+# [1] 8
+
+# [[9]]
+# [1] 34
+
+# [[10]]
+# [1] 67
+
+# [[1]]
+# [1] "Rishikesh"
+
+# [[2]]
+# [1] 24
+
+# [[3]]
+# [1] 1992.67
+
+# [[4]]
+# [1] "C"      "Python" "R"      "Go"    
+
+```
 
 
+
+
+# Notes
+
+> I am following the Google's naming convention for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
