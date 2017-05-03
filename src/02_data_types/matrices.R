@@ -11,7 +11,7 @@ print(integers.matrix)
 evens.matrix = matrix( c(1,2,3,5,6,4,9,7,8), nrow=3, ncol=3, byrow=FALSE)
 print(evens.matrix)
 
-#....................OUTPUT.........................
+##################### OUTPUT ##########################
 #      [,1] [,2]
 # [1,]   34   45
 # [2,]   23    1

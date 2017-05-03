@@ -12,6 +12,6 @@ print(evens.vector)
 cities.vector <- c("Bangalore", "Raipur", "Dhamtari", "Jagdalpur")
 print(cities.vector)
 
-#....................OUTPUT.........................
+##################### OUTPUT ##########################
 # [1]  2  4  8 10  0 44
 # [1] "Bangalore" "Raipur"    "Dhamtari"  "Jagdalpur"

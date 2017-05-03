@@ -17,7 +17,7 @@ paste(message,name,sep=" ")
 #message with separator :
 paste(message,name,sep=" : ")
 
-#...................OUTPUT.....................
+##################### OUTPUT ##########################
 # [1] "Hello programmers."
 # [1] "I am Rishikesh."
 # [1] "Hello programmers. I am Rishikesh."

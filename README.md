@@ -81,7 +81,7 @@ paste(message,name,sep=" ")
 #message with separator :
 paste(message,name,sep=" : ")
 
-#...................OUTPUT.....................
+#####################OUTPUT##########################
 # [1] "Hello programmers."
 # [1] "I am Rishikesh."
 # [1] "Hello programmers. I am Rishikesh."
@@ -131,7 +131,7 @@ paste(message,name,sep=" ")
 #message with separator :
 paste(message,name,sep=" : ")
 
-#...................OUTPUT.....................
+#####################OUTPUT##########################
 # [1] "Hello programmers."
 # [1] "I am Rishikesh."
 # [1] "Hello programmers. I am Rishikesh."
@@ -148,7 +148,6 @@ A list is an R-Object which can contain many different types elements inside it 
 # 	'aim_of_rscript' : 'using lists in R',
 # 	'coded_by' : 'Rishikesh Agrawani',
 # }
-#...................................................
 
 #Google's naming convention for identifiers
 integers.list = list(1,2,5,7,8,-6,4,8,34,67)	
@@ -159,7 +158,7 @@ print(integers.list)
 
 print(random.list)
 
-#....................OUTPUT.........................
+#####################OUTPUT##########################
 # [[1]]
 # [1] 1
 
@@ -202,6 +201,34 @@ print(random.list)
 # [[4]]
 # [1] "C"      "Python" "R"      "Go"    
 
+```
+
+##### Matrices
+
+A matrix is defined as a two dimensional data set.
+```{r }
+# {
+# 	'created_on' : '3 May 2017', 
+# 	'aim_of_rscript' : 'using matrices in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+#Creating a matrix of integers with 3 rows and 2 columns 
+integers.matrix = matrix( c(34, 45, 23, 1, 3, 4), nrow=3, ncol=2, byrow=TRUE)
+print(integers.matrix)
+
+evens.matrix = matrix( c(1,2,3,5,6,4,9,7,8), nrow=3, ncol=3, byrow=FALSE)
+print(evens.matrix)
+
+##################### OUTPUT ##########################
+#      [,1] [,2]
+# [1,]   34   45
+# [2,]   23    1
+# [3,]    3    4
+#      [,1] [,2] [,3]
+# [1,]    1    5    9
+# [2,]    2    6    7
+# [3,]    3    4    8
 ```
 
 
