@@ -3,7 +3,6 @@
 # 	'aim_of_rscript' : 'using lists in R',
 # 	'coded_by' : 'Rishikesh Agrawani',
 # }
-#...................................................
 
 #Google's naming convention for identifiers
 integers.list = list(1,2,5,7,8,-6,4,8,34,67)	
