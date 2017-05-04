@@ -231,39 +231,67 @@ print(evens.matrix)
 # [3,]    3    4    8
 ```
 
+##### Arrays
 
+While matrices are confined to 2 dimensions, arrays can be of any number of dimensions.
+array() function takes dim attribute which creates the required number of dimensions.
+```{r }
+# {
+# 	'created_on' : '4 May 2017', 
+# 	'aim_of_rscript' : 'using arrays in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+#Creating multi-dimensional(3x3x2) array of cities
+cities.arr = array( c("Bangalore", "Raipur", "London"), dim=c(3,3,2))
+print(cities.arr)
+
+#Creating multi-dimensional(3x3x3) array of integers
+integers.arr = array( c(1, 2, 3), dim=c(3, 3, 3))
+print(integers.arr)
+
+##################### OUTPUT ##########################
+# , , 1
+
+#      [,1]        [,2]        [,3]       
+# [1,] "Bangalore" "Bangalore" "Bangalore"
+# [2,] "Raipur"    "Raipur"    "Raipur"   
+# [3,] "London"    "London"    "London"   
+
+# , , 2
+
+#      [,1]        [,2]        [,3]       
+# [1,] "Bangalore" "Bangalore" "Bangalore"
+# [2,] "Raipur"    "Raipur"    "Raipur"   
+# [3,] "London"    "London"    "London"   
+
+# , , 1
+
+#      [,1] [,2] [,3]
+# [1,]    1    1    1
+# [2,]    2    2    2
+# [3,]    3    3    3
+
+# , , 2
+
+#      [,1] [,2] [,3]
+# [1,]    1    1    1
+# [2,]    2    2    2
+# [3,]    3    3    3
+
+# , , 3
+
+#      [,1] [,2] [,3]
+# [1,]    1    1    1
+# [2,]    2    2    2
+# [3,]    3    3    3
+
+```
 
 
 # Notes
 
 > I am following the Google's naming convention for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
 
-> install.packages("RMySQL)
-The downloaded binary packages are in
-	/var/folders/dj/mlh0z6z90h9ddsvj54j8g74r0000gn/T//Rtmpy5Ur0R/downloaded_packages
-> library(RMySQL)
->  msql.conn = dbConnect(MySQL(),user="root", password="admin@321", dbname="django",localhost="localhost")
-> dbListTables(msql.conn)
- [1] "PyApp_authuser"             "PyApp_loraevksensor"       
- [3] "auth_group"                 "auth_group_permissions"    
- [5] "auth_permission"            "auth_user"                 
- [7] "auth_user_groups"           "auth_user_user_permissions"
- [9] "django_admin_log"           "django_content_type"       
-[11] "django_migrations"          "django_session"            
-[13] "pincode_postoffice"         "pincode_postoffice1"       
-> 
-> result = dbSendQuery(msql.conn, "select * from pincode_postoffice;")
-> data.frame = fetch(result, n=10)
-> print(data.frame)
-       id pincode      district      city            state
-1   95221   95221      Bilaspur  Bilaspur Himachal Pradesh
-2  110001  110001     New Delhi New Delhi            Delhi
-3  110002  110002 Central Delhi New Delhi            Delhi
-4  110003  110003   North Delhi New Delhi            Delhi
-5  110004  110004 Central Delhi New Delhi            Delhi
-6  110005  110005 Central Delhi New Delhi            Delhi
-7  110006  110006 Central Delhi New Delhi            Delhi
-8  110007  110007   North Delhi New Delhi            Delhi
-9  110008  110008 Central Delhi New Delhi            Delhi
-10 110010  110010    West Delhi New Delhi            Delhi
->
+> Quick list of useful R packages can be found [here](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages)
+
