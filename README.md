@@ -102,12 +102,14 @@ There are many types of R-Objects. The frequently used ones are
 
 The simplest of these objects is **vector object** and there are six data types of these atomic vectors also termed as *six classes of vectors*.
 
-1)	Numeric
-2)	Integer
-3)	Complex
-4)	Character
-5)	Logical
-6)	Raw
+| six classes of vectors |
+| ---------------------- |
+| numeric |
+| integer |
+| complex |
+| character |
+| logical |
+| raw |
 
 ##### Vectors
 
@@ -339,6 +341,42 @@ print( cities.factor)
 # Levels: Alore Alpur Bangalore Cobispur
 
 ```
+
+##### Data frames
+
+Data frames are tabular data objects. 
+
+Unlike a matrix in data frame, each column can contain different modes of data.
+
+It is a list of vectors of equal length.
+
+Data frames are created using the data.frame() function.
+
+```{r}
+# {
+# 	'created_on' : '4 May 2017', 
+# 	'aim_of_rscript' : 'using data frames in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+name = c("Brian", "Robert", "Ross", "Ken")
+age = c(24, 22, 20, 19)
+city = c("London", "Banglaore", "Jabalpur", "Gurgaon")
+
+#Creating data frame
+details.df = data.frame( name, age, city)
+
+print(details.df)
+
+##################### OUTPUT ##########################
+#     name age      city
+# 1  Brian  24    London
+# 2 Robert  22 Banglaore
+# 3   Ross  20  Jabalpur
+# 4    Ken  19   Gurgaon
+```
+
+
 
 # Notes
 
