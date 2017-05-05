@@ -1001,6 +1001,7 @@ cat("\n")
 These operators are used for specific purpose and not for mathematical or logical manipulations.
 
 | Symbol | Description |
+| ------ | ----------- |
 | : | Colon operator. This operator is used to create a <br>sequence of numbers in vector | 
 | %in%| This operator is used to identify if an element <br> belongs to a vector |
 | %*% | This operator is used to multiply a matrix with <br> its transpose
@@ -1074,6 +1075,47 @@ cat("\n")
 
 ``` 
 
+# Decision making (if-else, switch)
+
+if-else constructs and switch statements allow us to perform specific actions based on some particular conditions.
+
+##### if-else example
+```r
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'if-else statement in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+if(TRUE){
+	cat("This is great opportunity to learn programming with curiosity.\n")
+}else{
+	cat("Never think Bad.")
+}
+
+if(10<67){
+	cat("10 is less than 67.\n")
+}
+
+percent <- 78
+if(percent>=75 && percent<=80){
+	cat("78% indicates MERIT result.\n")
+}
+
+#My thought(Acc. to C/C++ experience)
+if(67){
+	cat("Positive integer is evaluated as TRUE if used in conditional expression.\n")
+}else{
+	cat("Enjoy programming.")
+}
+
+# This is great opportunity to learn programming with curiosity.
+# 10 is less than 67.
+# 78% indicates MERIT result.
+# Positive integer is evaluated as TRUE if used in conditional expression.
+
+```
+
 # Focus
 
 > In R programming, the very basic data types are the R-Objects called **vectors** .
@@ -1106,9 +1148,15 @@ rm( list = ls())  #To delete all the variables
 rm( list = ls(all.name=TURE)) # To delete all the variables including the one which starts with dot(.)
 ```
 
-> Arithmetic operators ( +, -, *, %/%, %%, ^)
+> Arithmetic operators ( +, -, *, %/%, %%, ^ )
 
-> Logical operators (&&, ||, |, &, !)
+> Logical operators ( &&, ||, |, &, ! )
+
+> Relational operators ( <, <=, >, >=, ==, != )
+
+> Assignment operators ( ->, ->>, <-, <<-, = )
+
+> Miscellaneous operators ( :, %in%, %*% )
 
 
 
