@@ -376,7 +376,26 @@ print(details.df)
 # 4    Ken  19   Gurgaon
 ```
 
+### Variables
 
+Only letters, underscores, dots and numbers are allowed.
+Variable name should start with dot(.) or aplphabet.
+If it starts with dot(.) then dot should not be followed by any number.
+
+Following is the list of valid & invalid varible names.
+
+| Valid | Invalid |
+| ----- | ----- |
+| apple | .2apple |
+| apple.fruit | 2apple |
+| apple_fruit | _apple |
+| apple3 | @apple |
+| .apple | apple# |
+| Apple3_fruit | -apple.fruit
+
+```typescript
+
+```
 
 # Notes
 
