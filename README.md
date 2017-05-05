@@ -506,13 +506,75 @@ cat("class of ",two_d.arr," is ", class(two_d.arr),"\n")
 # class of  44 666 92 54 32 1296  is  matrix 
 ```
 
+##### Printing all the variables available in the workspace
+
+```{r }
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'ls() function in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+a = 12
+
+b = 12.34
+
+integers.arr = array( c(1, 5, 8, 2, -9) )
+
+evens.mat = array( c(0, 22, 8, 4, 6, 2), dim=c(3,2))
+
+odds.mat = matrix( c(1, 9, 5, 3, 7, 33, 11, 13, 55), ncol=3, nrow=3, byrow=TRUE)
+
+print(a)
+
+print(b)
+cat("\n")
+
+print(evens.mat)
+cat("\n")
+
+print(integers.arr)
+cat("\n")
+
+print(odds.mat)
+
+#Printing out all the variables available in workspace
+cat("\n List of all the variables available in the workspace:-\n")
+print( ls() )
+
+# [1] 12
+# [1] 12.34
+
+#      [,1] [,2]
+# [1,]    0    4
+# [2,]   22    6
+# [3,]    8    2
+
+# [1]  1  5  8  2 -9
+
+#      [,1] [,2] [,3]
+# [1,]    1    9    5
+# [2,]    3    7   33
+# [3,]   11   13   55
+
+#  List of all the variables available in the workspace:-
+# [1] "a"            "b"            "evens.mat"    "integers.arr" "odds.mat"
+```
+
+
 # Focus
 
-> I am following the Google's naming convention for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
+> I am following the **Google's naming convention** for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
 
-> Quick list of useful R packages can be found [here](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages)
+> Quick list of useful **R packages** can be found [here](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages)
 
-> Download RStudio from [here](https://www.rstudio.com/products/rstudio/download/)
+> Download **RStudio** from [here](https://www.rstudio.com/products/rstudio/download/)
 
 > **print()** and **cat()** functions
+
+> R is dymanically typed language.
+
+> **ls()** function is used to list the variables currently available in the workspace.
+
+
 
