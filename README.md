@@ -647,7 +647,146 @@ print( ls(all.name=TRUE))
 
 ##### Deleting variables
 ```{r }
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'rm() function in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
 
+apple = "Red Apple"
+
+fav_fruit <- apple
+
+integers.fact <- factor( c(1, 4, 7, 8, 1, 4, 7, 3, 5, 4) )
+
+c("Hemkesh","Robert") -> name 
+c(24,35) -> age
+
+data.frame(name, age) -> details.df
+
+print(apple)
+cat('\n')
+
+print(fav_fruit)
+cat('\n')
+
+print(integers.fact)
+cat('\n')
+
+print(details.df)
+cat('\n')
+
+cat("Listing all the variables :-\n")
+print(ls(all.name=TRUE))
+cat('\n')
+
+rm(apple)
+cat("Deleting varibale named apple...\n")
+cat("Deleted...\n\n")
+
+cat("Listing all the variables :-\n")
+print(ls(all.name=TRUE))
+cat('\n')
+
+
+rm(list=ls())
+cat("Deleting all the varibales...\n")
+cat("Deleted all the variables...\n\n")
+
+cat("Listing all the variables :-\n")
+print(ls(all.name=TRUE))
+cat('\n')
+
+# [1] "Red Apple"
+
+# [1] "Red Apple"
+
+#  [1] 1 4 7 8 1 4 7 3 5 4
+# Levels: 1 3 4 5 7 8
+
+#      name age
+# 1 Hemkesh  24
+# 2  Robert  35
+
+# Listing all the variables :-
+# [1] "age"           "apple"         "details.df"    "fav_fruit"    
+# [5] "integers.fact" "name"         
+
+# Deleting varibale named apple...
+# Deleted...
+
+# Listing all the variables :-
+# [1] "age"           "details.df"    "fav_fruit"     "integers.fact"
+# [5] "name"         
+
+# Deleting all the varibales...
+# Deleted all the variables...
+
+# Listing all the variables :-
+# character(0)
+
+```
+
+### Operators
+
+An operator is a symbol that tells the compiler to perform specific operations like arithmetical, logical etc.
+
+| Operators |
+| --------- |
+| Arithmetic |
+| Logical | 
+| Relational |
+| Assignment |
+| Miscellaneous | 
+
+##### Arithmetic operators ( +, -, *, %/%, %%, ^)
+
+```r
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'Using arithmetic operators in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+a = 10
+b <- 5
+18 -> c
+
+cat(a,"+",b, "=",a+b)	#Addition
+cat("\n")
+
+cat(a,"-",b, "=",a-b)	#Subtraction
+cat("\n")
+
+cat(a,"*",b, "=",a*b)	#Multiplication
+cat("\n")
+
+cat(a,"%/%",b, "=",a%/%b)	#Division
+cat("\n")
+
+cat(c,"%%",b, "=",c%%b)		#Remainder 
+cat("\n")
+
+cat(10,"^",3, "=",10^3)		#Exponentiation
+cat("\n")
+
+integers.vect <- c(12, 45, 67, 8)
+evens.vect <- c(3, 5, 4, 7)
+
+cat(integers.vect," + ", evens.vect, " = ", integers.vect + evens.vect)
+cat('\n')
+
+cat(integers.vect," %% ", evens.vect, " = ",integers.vect %% evens.vect)
+cat('\n')
+
+# 10 + 5 = 15
+# 10 - 5 = 5
+# 10 * 5 = 50
+# 10 %/% 5 = 2
+# 18 %% 5 = 3
+# 10 ^ 3 = 1000
+# 12 45 67 8  +  3 5 4 7  =  15 50 71 15
+# 12 45 67 8  %%  3 5 4 7  =  0 0 3 1
 ```
 
 # Focus
@@ -664,17 +803,24 @@ print( ls(all.name=TRUE))
 
 > **ls()** function is used to list the variables currently available in the workspace.
 
-ls(pattern="apple")  #varibles with pattern => apple
+```r
+ls(pattern="apple")  #variables with pattern => apple
 
 ls(all.name=TRUE)	 #all variables including the one which starts with dot(.)
+```
 
 > **rm()** function is used to delete the variable.
 
+```r
 rm( apple )  #To delete varibale named apple
 
 rm( list = ls())  #To delete all the variables 
 
 rm( list = ls(all.name=TURE)) # To delete all the variables including the one which starts with dot(.)
- 
+```
+
+> Arithmetic operators ( +, -, *, %/%, %%, ^)
+
+
 
 
