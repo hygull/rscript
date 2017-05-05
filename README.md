@@ -61,7 +61,7 @@ yum install R
 <hr>
 
 ### Hello world program in R
-```{r}
+```r
 # {
 # 	'created_on' : '3 May 2017', 
 # 	'aim_of_rscript' : 'printing messages in R',
@@ -113,7 +113,7 @@ The simplest of these objects is **vector object** and there are six data types 
 
 ##### Vectors
 
-```{r }
+```r
 # {
 # 	'created_on' : '3 May 2017', 
 # 	'aim_of_rscript' : 'printing messages in R',
@@ -208,7 +208,7 @@ print(random.list)
 ##### Matrices
 
 A matrix is defined as a two dimensional data set.
-```{r }
+```r
 # {
 # 	'created_on' : '3 May 2017', 
 # 	'aim_of_rscript' : 'using matrices in R',
@@ -302,7 +302,7 @@ factors are created using factor() function.
 
 nlevels() function gives the number of labels in factor.
 
-```{r}
+```r
 # {
 # 	'created_on' : '4 May 2017', 
 # 	'aim_of_rscript' : 'using factors in R',
@@ -352,7 +352,7 @@ It is a list of vectors of equal length.
 
 Data frames are created using the data.frame() function.
 
-```{r}
+```r
 # {
 # 	'created_on' : '4 May 2017', 
 # 	'aim_of_rscript' : 'using data frames in R',
@@ -395,7 +395,7 @@ Following is the list of valid & invalid varible names.
 
 ##### 3 ways of variable assignment in R
 
-```{r }
+```r
 # {
 # 	'created_on' : '5 May 2017', 
 # 	'aim_of_rscript' : 'To perform variable assignment in R',
@@ -429,7 +429,7 @@ print(evens.factor)
 
 cat() is used to combine multiple items into a single line(contiguous print) output
 
-```{r }
+```r
 # {
 # 	'created_on' : '5 May 2017', 
 # 	'aim_of_rscript' : 'Using cat() function in R',
@@ -459,7 +459,7 @@ cat(name, age, roll_no,"\n")
 ```
 
 ##### Checking the class of variables
-```{r }
+```r
 # {
 # 	'created_on' : '5 May 2017', 
 # 	'aim_of_rscript' : 'Checking types of varibales',
@@ -508,7 +508,7 @@ cat("class of ",two_d.arr," is ", class(two_d.arr),"\n")
 
 ##### Printing all the variables available in the workspace
 
-```{r }
+```r
 # {
 # 	'created_on' : '5 May 2017', 
 # 	'aim_of_rscript' : 'ls() function in R',
@@ -562,7 +562,7 @@ print( ls() )
 ```
 
 ##### Using pattern argument with ls() function
-```{r }
+```r
 # {
 # 	'created_on' : '5 May 2017', 
 # 	'aim_of_rscript' : 'ls() function with pattern in R',
@@ -646,7 +646,7 @@ print( ls(all.name=TRUE))
 ```
 
 ##### Deleting variables
-```{r }
+```r
 # {
 # 	'created_on' : '5 May 2017', 
 # 	'aim_of_rscript' : 'rm() function in R',
@@ -741,6 +741,14 @@ An operator is a symbol that tells the compiler to perform specific operations l
 
 ##### Arithmetic operators ( +, -, *, %/%, %%, ^)
 
+| Name | Symbol |
+| Addition | + |
+| Subtraction | - |
+| Multiplication | * | 
+| Division | %/% | 
+| Modulus | %% | 
+| Exponentiation | ^ | 
+
 ```r
 # {
 # 	'created_on' : '5 May 2017', 
@@ -788,6 +796,79 @@ cat('\n')
 # 12 45 67 8  +  3 5 4 7  =  15 50 71 15
 # 12 45 67 8  %%  3 5 4 7  =  0 0 3 1
 ```
+
+##### Logical operators (&, |, !, &&, ||)
+
+Logical operators are applicable only to vectors of type numeric, integer, complex and logical. Visit [here](https://www.tutorialspoint.com/r/r_operators.htm) for more info.
+
+| Name | Symbol | 
+| Element-wise logical OR | \| | 
+| Element-wise logical AND | & | 
+| Logical NOT | ! | 
+| Logical OR | \|\| | 
+| Logical AND | && |
+
+```r
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'Using logical operators in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+integers.vect = c(4, 5, 6, 0, 1, 2)
+
+evens.vect = c(0, 5, 7, 9, 1, -3)
+
+cat(integers.vect, " & ",evens.vect, " = ", integers.vect & evens.vect)
+cat('\n\n')
+
+cat(integers.vect, " | ",evens.vect," = ", integers.vect | evens.vect)
+cat("\n\n")
+
+cat(integers.vect, " && ",evens.vect," = ", integers.vect && evens.vect)
+cat("\n\n")
+
+cat(integers.vect, " || ",evens.vect," = ", integers.vect || evens.vect)
+cat("\n\n")
+
+cat("!",evens.vect," = ",!evens.vect)
+cat("\n\n")
+
+complex.vect.1 = c(67+0i, 0+0i, 9+3i, FALSE, 0, -6,TRUE)
+complex.vect.2 = c(0+8i, TRUE, 89.3, 45, 1, -7, FALSE)
+
+cat(complex.vect.1, " & ",complex.vect.2, " = ", complex.vect.1 & complex.vect.2)
+cat('\n\n')
+
+cat(complex.vect.1, " | ",complex.vect.2, " = ", complex.vect.1 | complex.vect.2)
+cat('\n\n')
+
+cat(complex.vect.1, " && ",complex.vect.2, " = ", complex.vect.1 && complex.vect.2)
+cat('\n\n')
+
+cat(complex.vect.1, " || ",complex.vect.2, " = ", complex.vect.1 || complex.vect.2)
+cat('\n\n')
+
+
+# 4 5 6 0 1 2  &  0 5 7 9 1 -3  =  FALSE TRUE TRUE FALSE TRUE TRUE
+
+# 4 5 6 0 1 2  |  0 5 7 9 1 -3  =  TRUE TRUE TRUE TRUE TRUE TRUE
+
+# 4 5 6 0 1 2  &&  0 5 7 9 1 -3  =  FALSE
+
+# 4 5 6 0 1 2  ||  0 5 7 9 1 -3  =  TRUE
+
+# ! 0 5 7 9 1 -3  =  TRUE FALSE FALSE FALSE FALSE FALSE
+
+# 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  &  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE FALSE TRUE FALSE FALSE TRUE FALSE
+
+# 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  |  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+
+# 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  &&  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE
+
+# 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  ||  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE
+
+``` 
 
 # Focus
 
