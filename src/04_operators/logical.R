@@ -6,7 +6,7 @@
 
 integers.vect = c(4, 5, 6, 0, 1, 2)
 
-evens.vect = c(0, 5, 7, 9, 1, -3)
+evens.vect = c(0, 8, 4, 6, 10, 12)
 
 cat(integers.vect, " & ",evens.vect, " = ", integers.vect & evens.vect)
 cat('\n\n')
@@ -39,15 +39,15 @@ cat(complex.vect.1, " || ",complex.vect.2, " = ", complex.vect.1 || complex.vect
 cat('\n\n')
 
 
-# 4 5 6 0 1 2  &  0 5 7 9 1 -3  =  FALSE TRUE TRUE FALSE TRUE TRUE
+# 4 5 6 0 1 2  &  0 8 4 6 10 12  =  FALSE TRUE TRUE FALSE TRUE TRUE
 
-# 4 5 6 0 1 2  |  0 5 7 9 1 -3  =  TRUE TRUE TRUE TRUE TRUE TRUE
+# 4 5 6 0 1 2  |  0 8 4 6 10 12  =  TRUE TRUE TRUE TRUE TRUE TRUE
 
-# 4 5 6 0 1 2  &&  0 5 7 9 1 -3  =  FALSE
+# 4 5 6 0 1 2  &&  0 8 4 6 10 12  =  FALSE
 
-# 4 5 6 0 1 2  ||  0 5 7 9 1 -3  =  TRUE
+# 4 5 6 0 1 2  ||  0 8 4 6 10 12  =  TRUE
 
-# ! 0 5 7 9 1 -3  =  TRUE FALSE FALSE FALSE FALSE FALSE
+# ! 0 8 4 6 10 12  =  TRUE FALSE FALSE FALSE FALSE FALSE
 
 # 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  &  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE FALSE TRUE FALSE FALSE TRUE FALSE
 
@@ -56,4 +56,3 @@ cat('\n\n')
 # 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  &&  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE
 
 # 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  ||  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE
-

@@ -144,7 +144,7 @@ paste(message,name,sep=" : ")
 
 A list is an R-Object which can contain many different types elements inside it like vectors, functions and even another list inside it.
 
-```{r }
+```r
 # {
 # 	'created_on' : '3 May 2017', 
 # 	'aim_of_rscript' : 'using lists in R',
@@ -237,7 +237,7 @@ print(evens.matrix)
 
 While matrices are confined to 2 dimensions, arrays can be of any number of dimensions.
 array() function takes dim attribute which creates the required number of dimensions.
-```{r }
+```r
 # {
 # 	'created_on' : '4 May 2017', 
 # 	'aim_of_rscript' : 'using arrays in R',
@@ -742,6 +742,7 @@ An operator is a symbol that tells the compiler to perform specific operations l
 ##### Arithmetic operators ( +, -, *, %/%, %%, ^)
 
 | Name | Symbol |
+| ---- | ------ |
 | Addition | + |
 | Subtraction | - |
 | Multiplication | * | 
@@ -802,6 +803,7 @@ cat('\n')
 Logical operators are applicable only to vectors of type numeric, integer, complex and logical. Visit [here](https://www.tutorialspoint.com/r/r_operators.htm) for more info.
 
 | Name | Symbol | 
+| ---- | ------ |
 | Element-wise logical OR | \| | 
 | Element-wise logical AND | & | 
 | Logical NOT | ! | 
@@ -817,7 +819,7 @@ Logical operators are applicable only to vectors of type numeric, integer, compl
 
 integers.vect = c(4, 5, 6, 0, 1, 2)
 
-evens.vect = c(0, 5, 7, 9, 1, -3)
+evens.vect = c(0, 8, 4, 6, 10, 12)
 
 cat(integers.vect, " & ",evens.vect, " = ", integers.vect & evens.vect)
 cat('\n\n')
@@ -850,15 +852,15 @@ cat(complex.vect.1, " || ",complex.vect.2, " = ", complex.vect.1 || complex.vect
 cat('\n\n')
 
 
-# 4 5 6 0 1 2  &  0 5 7 9 1 -3  =  FALSE TRUE TRUE FALSE TRUE TRUE
+# 4 5 6 0 1 2  &  0 8 4 6 10 12  =  FALSE TRUE TRUE FALSE TRUE TRUE
 
-# 4 5 6 0 1 2  |  0 5 7 9 1 -3  =  TRUE TRUE TRUE TRUE TRUE TRUE
+# 4 5 6 0 1 2  |  0 8 4 6 10 12  =  TRUE TRUE TRUE TRUE TRUE TRUE
 
-# 4 5 6 0 1 2  &&  0 5 7 9 1 -3  =  FALSE
+# 4 5 6 0 1 2  &&  0 8 4 6 10 12  =  FALSE
 
-# 4 5 6 0 1 2  ||  0 5 7 9 1 -3  =  TRUE
+# 4 5 6 0 1 2  ||  0 8 4 6 10 12  =  TRUE
 
-# ! 0 5 7 9 1 -3  =  TRUE FALSE FALSE FALSE FALSE FALSE
+# ! 0 8 4 6 10 12  =  TRUE FALSE FALSE FALSE FALSE FALSE
 
 # 67+0i 0+0i 9+3i 0+0i 0+0i -6+0i 1+0i  &  0+8i 1+0i 89.3+0i 45+0i 1+0i -7+0i 0+0i  =  TRUE FALSE TRUE FALSE FALSE TRUE FALSE
 
@@ -870,7 +872,78 @@ cat('\n\n')
 
 ``` 
 
+##### Relational operators
+
+Relational operators are used to compare vectors.
+
+| Name | Symbol |
+| ---- | ------ |
+| < | Less than |
+| <= | Less than or equal to |
+| > | Greater than |
+| >= | Greater than or equal to |
+| == | Equal to| 
+| != | Not equal to |
+
+
+```r
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'Using relational operators in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+a = 10
+b = 34
+c = 45
+
+cat(a," < ",b, " ", a<b)
+cat("\n")
+
+cat(a," <= ",10, " ", a<=10)
+cat("\n")
+
+cat(a," > ",c, " ", a>c)
+cat("\n")
+
+cat(a," >= ",b, " ", a>=b)
+cat("\n")
+
+cat(a," == ",c, " ", a==c)
+cat("\n")
+
+cat(a," != ",b, " ", a!=b)
+cat("\n")
+
+#Deifning 3 vectors of integer items
+integers.vect = c(12, 45, 67, 89, 87)
+evens.vect = c(12, 44, 76, 88, 14)
+odds.vect = c(10, 43, 65, 87, 85)
+
+cat(integers.vect, " < ",evens.vect, " = ", integers.vect < evens.vect )
+cat("\n")
+
+cat(integers.vect, " < ",odds.vect, " = ", integers.vect < odds.vect )
+cat("\n")
+
+cat(integers.vect, " > ",odds.vect, " = ", integers.vect > odds.vect )
+cat("\n")
+
+
+# 10  <  34   TRUE
+# 10  <=  10   TRUE
+# 10  >  45   FALSE
+# 10  >=  34   FALSE
+# 10  ==  45   FALSE
+# 10  !=  34   TRUE
+# 12 45 67 89 87  <  12 44 76 88 14  =  FALSE FALSE TRUE FALSE FALSE
+# 12 45 67 89 87  <  10 43 65 87 85  =  FALSE FALSE FALSE FALSE FALSE
+# 12 45 67 89 87  >  10 43 65 87 85  =  TRUE TRUE TRUE TRUE TRUE
+```
+
 # Focus
+
+> In R programming, the very basic data types are the R-Objects called **vectors** .
 
 > I am following the **Google's naming convention** for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
 
@@ -902,6 +975,7 @@ rm( list = ls(all.name=TURE)) # To delete all the variables including the one wh
 
 > Arithmetic operators ( +, -, *, %/%, %%, ^)
 
+> Logical operators (&&, ||, |, &, !)
 
 
 
