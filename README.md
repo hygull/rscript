@@ -878,12 +878,12 @@ Relational operators are used to compare vectors.
 
 | Name | Symbol |
 | ---- | ------ |
-| < | Less than |
-| <= | Less than or equal to |
-| > | Greater than |
-| >= | Greater than or equal to |
-| == | Equal to| 
-| != | Not equal to |
+| Less than | < | 
+| Less than or equal to | <= |
+| Greater than | > |
+| Greater than or equal to | >= |
+| Equal to| == | 
+| Not equal to | != | 
 
 
 ```r
@@ -939,6 +939,61 @@ cat("\n")
 # 12 45 67 89 87  <  12 44 76 88 14  =  FALSE FALSE TRUE FALSE FALSE
 # 12 45 67 89 87  <  10 43 65 87 85  =  FALSE FALSE FALSE FALSE FALSE
 # 12 45 67 89 87  >  10 43 65 87 85  =  TRUE TRUE TRUE TRUE TRUE
+```
+
+#### Assignment operators
+
+Assignment operators are used to assign values to vectors.
+
+| Name | Symbol |
+| ---- | ------ |
+| Assginment | = |
+| Left assignment (Leftward assignment) | <- <br> OR <br> <<- | 
+| Right assignment (Rightward assignment) | -> <br> OR <br> ->> | 
+
+```r
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'Using assignment operators in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+#1st way of assignment using =
+programming.langs.vect = c("C", "C++", "Go", "Python", "TypeScript", "R")
+
+#2nd way of assignment using -> (rightward assignment or right assignment)
+c(12, 45, 78, 98) -> integers.vect 
+
+#3rd way of assignment using ->> (rightward assignment or right assignment)
+c(34, 67+92i, TRUE, 1) ->> random.vect
+
+#4th way of assignment using <- (leftward assignment or left assignment)
+evens.vect <- c(34, 56, 78, 92)
+
+#5th way of assignment using <<- (leftward assignment or left assignment)
+odds.vect <<- c(1, 5, 7, 9, 13, 35)
+
+cat(programming.langs.vect)
+cat("\n")
+
+cat(integers.vect)
+cat('\n')
+
+cat(random.vect)
+cat('\n')
+
+cat(evens.vect)
+cat('\n')
+
+cat(odds.vect)
+cat("\n")
+
+# C C++ Go Python TypeScript R
+# 12 45 78 98
+# 34+0i 67+92i 1+0i 1+0i
+# 34 56 78 92
+# 1 5 7 9 13 35
+
 ```
 
 # Focus
