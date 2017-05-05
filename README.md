@@ -458,7 +458,7 @@ cat(name, age, roll_no,"\n")
 # Rishikesh Mukund Darshan Sandeep Ranjit 24 26 23 23 24 67 101 305 87 12 
 ```
 
-# Checking the class of variables
+##### Checking the class of variables
 ```{r }
 # {
 # 	'created_on' : '5 May 2017', 
@@ -561,7 +561,7 @@ print( ls() )
 # [1] "a"            "b"            "evens.mat"    "integers.arr" "odds.mat"
 ```
 
-
+##### Using pattern argument in ls() function
 # Focus
 
 > I am following the **Google's naming convention** for R. Visit [here](https://google.github.io/styleguide/Rguide.xml) to check it.
