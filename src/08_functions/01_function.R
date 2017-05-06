@@ -6,21 +6,21 @@
 
 #Example 1
 #Defining a funtion that add two integers
-addition = function(num1, num2){
+Addition = function(num1, num2){
 	 num1 + num2
 }
 
-s = addition(12, 56L)
+s = Addition(12, 56L)
 
-s2 = addition(34L, -5)
+s2 = Addition(34L, -5)
 
-s3 = addition(5, 7L) + addition(3, -4L)
+s3 = Addition(5, 7L) + Addition(3, -4L)
 
 cat(s,"\t",s2,"\t",s3,"\n")
 
 #Example 2
 #Calculation of factorial (Here I am not checking for -ve integers, it is on you)
-fact = function(n){
+Fact = function(n){
 	f <- 1
 	if(!(n == 0 || n == 1)){
 		i <- 2
@@ -32,10 +32,10 @@ fact = function(n){
 	f #return value
 }
 
-cat( "Factorial(5) : ",fact(5),"\n")
-cat( "Factorial(1) : ",fact(1),"\n")
-cat( "Factorial(0) : ",fact(0),"\n")
-cat( "Factorial(7) : ",fact(7),"\n")
+cat( "Factorial(5) : ",Fact(5),"\n")
+cat( "Factorial(1) : ",Fact(1),"\n")
+cat( "Factorial(0) : ",Fact(0),"\n")
+cat( "Factorial(7) : ",Fact(7),"\n")
 
 
 # 68 	 29 	 11 

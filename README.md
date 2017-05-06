@@ -1489,6 +1489,10 @@ cat("\n")
 
 A function is defined as a self contained block of statements that performs a coherent task of some kind.
 
+Visit [here](https://cran.r-project.org/doc/contrib/Short-refcard.pdf) to see most widely used built-in R functions.
+
+<img src="https://i.ytimg.com/vi/-tip_r430gs/maxresdefault.jpg" width="100%">
+
 The return value of a function is the last expression in the function body to be evaluated.
 
 ##### Basic syntax to create a function
@@ -1573,6 +1577,38 @@ cat( "Factorial(7) : ",fact(7),"\n")
 # Factorial(0) :  1 
 # Factorial(7) :  5040 
 ```
+
+Example 2
+
+##### Function call by position & name of arguments
+
+```r
+# {
+# 	'created_on' : 6 May 2017', 
+# 	'aim_of_rscript' : 'Call by name and call by position in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+Details <- function(name, age) {
+	cat("Hello ",name,"\n")
+	cat("Really!, you are ",age,"years old\n")
+}
+
+#Call by position
+Details("Robert Gales",24)
+
+#Call by name of arguments
+Details(age=36, name="Graham Jones")
+
+# Hello  Robert Gales 
+# Really!, you are  24 years old
+# Hello  Graham Jones 
+# Really!, you are  36 years old
+```
+
+
+
+
 
 # Focus
 
@@ -1664,5 +1700,7 @@ NULL
 > 
 ```
 
+> Visit [here](https://cran.r-project.org/doc/contrib/Short-refcard.pdf) to see the list of built-in R functions.
 
+> Call by position & Call by name
 
