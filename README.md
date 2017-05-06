@@ -462,7 +462,7 @@ cat(name, age, roll_no,"\n")
 ```r
 # {
 # 	'created_on' : '5 May 2017', 
-# 	'aim_of_rscript' : 'Checking types of varibales',
+# 	'aim_of_rscript' : 'Checking types of variables',
 # 	'coded_by' : 'Rishikesh Agrawani',
 # }
 
@@ -1679,6 +1679,44 @@ cat(SquaredSum( 4 ))	 		#Error
 # Execution halted
 ```
 
+# Strings
+
+Any value written within the single quote or double quote in R is treated a **String**. 
+
+Visit [here](https://www.tutorialspoint.com/r/r_strings.htm) to know more about **strings**.
+
+```r
+# {
+# 	'created_on' : 6 May 2017', 
+# 	'aim_of_rscript' : 'Using strings in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+#With double quotes
+name <- "Rishikesh"
+
+#With single quotes 
+city <<- 'Bangalore'
+
+#single quote within double quotes
+sentence <- "It's ok if you do any mistake."
+
+#double quote within within single quotes
+sentence2 <<- 'Orange is most famous in "India".'
+
+print(name)
+
+print(city)
+
+print(sentence)
+
+print(sentence2)
+
+# [1] "Rishikesh"
+# [1] "Bangalore"
+# [1] "It's ok if you do any mistake."
+# [1] "Orange is most famous in \"India\"."
+```
 
 # Focus
 

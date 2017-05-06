@@ -1,6 +1,6 @@
 # {
 # 	'created_on' : '5 May 2017', 
-# 	'aim_of_rscript' : 'Checking types of varibales',
+# 	'aim_of_rscript' : 'Checking types of variables',
 # 	'coded_by' : 'Rishikesh Agrawani',
 # }
 
