@@ -27,3 +27,7 @@ for (ch in LETTERS[1:9]) {
 }
 
 cat("\n")
+
+# 1 	5 	8 	3 	6 	2 	9 	45 	67 	78 	
+# 1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	
+# A 	B 	C 	D 	E 	F 	G 	H 	I 
