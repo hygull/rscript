@@ -1127,9 +1127,9 @@ if(67){
 country <- "India"
 if(country == "Pak"){
 	cat("I am from Pak")
-}else if(country=="Sri lanka"){
+}else if(country == "Sri lanka"){
 	cat("I am from Sri lanka")
-}else if(country=="India"){
+}else if(country == "India"){
 	cat("I am from India\n")
 }else{
 	cat("I am from USA")
@@ -1159,6 +1159,64 @@ cat("\n")
 # I am from India
 # 55  is greater among  23  and  46
 
+```
+
+# Switch cases
+
+Switch cases allow us to perform specific set of actions under a specific case if any case matching found based on the following conditions.
+
+* If named cases are not available then switch expression is matched with case indexes.
+
+* If named cases are available then switch epression is matched with the name of cases and the statement(s) of that particular case executes.
+
+* If the value of switch expression is not a character string then it is coerced to integer. 
+
+* If expression is character string then that string is matched(exactly) to the name of elements.
+
+**Note : ** for more details visit [here](https://www.tutorialspoint.com/r/r_switch_statement.htm) and [stackoverflow](http://stackoverflow.com/questions/10393508/how-to-use-the-switch-statement-in-r-functions)
+
+```r
+# {
+# 	'created_on' : '5 May 2017', 
+# 	'aim_of_rscript' : 'if-else...if_else statement in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+#Switch by index
+answer <- switch(1,"One","Two", "Three")
+cat(answer,"\n")
+
+#Switch by index with complex expressions
+switch(2, {"Power is ON ie. 1"}, {"2 faces of a Chameleon"}, {"3 states of water"} ) ->> answer
+cat(answer, "\n")
+
+#Switch by index with complex named expressions
+answer = switch(3, power={"Power is ON ie. 1"}, chameleon={"2 faces of a Chameleon"}, water={"3 states of water"}) 
+cat(answer, "\n")
+
+#Switch by name with complex named expressions
+answer = switch("chameleon", power={"Power is ON"}, chameleon={"Chameleon is clever"}, water={"States of water"}) 
+cat(answer, "\n")
+
+#Another examples...TRUE-->1
+answer <- switch(TRUE, 8+9i, 64+4i, TRUE, 67)
+cat(answer,'\n')
+
+#Another examples...TRUE+TRUE-->2
+answer <- switch(TRUE+TRUE, 8+9i, 64+4i, TRUE, 67)
+cat(answer,'\n')
+
+#Another examples...3+0i-->3
+answer <- switch(3+0i, 8+9i, 64+4i, TRUE, 67)
+cat(answer,'\n')
+
+# One 
+# 2 faces of a Chameleon 
+# 3 states of water 
+# Chameleon is clever 
+# 8+9i 
+# 64+4i 
+# TRUE 
 ```
 
 # Focus

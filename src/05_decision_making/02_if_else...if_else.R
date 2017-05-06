@@ -7,9 +7,9 @@
 country <- "India"
 if(country == "Pak"){
 	cat("I am from Pak")
-}else if(country=="Sri lanka"){
+}else if(country == "Sri lanka"){
 	cat("I am from Sri lanka")
-}else if(country=="India"){
+}else if(country == "India"){
 	cat("I am from India\n")
 }else{
 	cat("I am from USA")
