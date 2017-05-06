@@ -1485,6 +1485,95 @@ cat("\n")
 # 60 	51 	67 	89 
 ```
 
+# Function
+
+A function is defined as a self contained block of statements that performs a coherent task of some kind.
+
+The return value of a function is the last expression in the function body to be evaluated.
+
+##### Basic syntax to create a function
+```r
+	function_name <- fucntion([arg1[, arg2[, arg3[,...]]]){
+		#Statement 1
+		#...
+		#Statement N
+	}
+```
+
+eg.
+
+```r
+	addition <- function(a, b){		#Parameter list can be empty
+		a + b
+	}
+
+	s = addition(12, 3)				#Calling function
+	print(s)
+```
+
+or more clearly look at the following.
+
+```r
+> addition <- function(a, b){
++ a + b
++ }
+> 
+> s = addition(12, 3)#Calling function
+> print(s)
+[1] 15
+> 
+```
+
+Example 1
+
+```r
+# {
+# 	'created_on' : 6 May 2017', 
+# 	'aim_of_rscript' : 'Using functions in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+#Example 1
+#Defining a funtion that add two integers
+addition = function(num1, num2){
+	 num1 + num2
+}
+
+s = addition(12, 56L)
+
+s2 = addition(34L, -5)
+
+s3 = addition(5, 7L) + addition(3, -4L)
+
+cat(s,"\t",s2,"\t",s3,"\n")
+
+#Example 2
+#Calculation of factorial (Here I am not checking for -ve integers, it is on you)
+fact = function(n){
+	f <- 1
+	if(!(n == 0 || n == 1)){
+		i <- 2
+		while(i<=n){
+			f = f * i
+			i = i + 1
+		}
+	}
+	f #return value
+}
+
+cat( "Factorial(5) : ",fact(5),"\n")
+cat( "Factorial(1) : ",fact(1),"\n")
+cat( "Factorial(0) : ",fact(0),"\n")
+cat( "Factorial(7) : ",fact(7),"\n")
+
+
+# 68 	 29 	 11 
+# Factorial(5) :  120 
+# Factorial(1) :  1 
+# Factorial(0) :  1 
+# Factorial(7) :  5040 
+```
+
 # Focus
 
 > In R programming, the very basic data types are the R-Objects called **vectors** .
@@ -1537,6 +1626,43 @@ rm( list = ls(all.name=TURE)) # To delete all the variables including the one wh
 
 > i += 1 	#Incorrect
 
+> break keyword
+
+> next keyword
+
+> for loop(similar to as JS syntax), while loop, repeat loop
+
+> function definition (similar to JS syntax)
+
+> switch supports 1+0i(Coerced to 1, the index of first case) as case value but not 5+4i (check it).
+
+```r
+> switch(1+0i, "one","two","three")
+[1] "one"
+> switch(5+4i, "one","two","three")
+Warning message:
+imaginary parts discarded in coercion 
+> ans = switch(5+4i, "one","two","three")
+Warning message:
+imaginary parts discarded in coercion 
+> ans
+NULL
+> 
+```
+
+> 10L
+
+```r
+> 10L + 3
+[1] 13
+> class(10L)
+[1] "integer"
+> class(10)
+[1] "numeric"
+> class(10.9)
+[1] "numeric"
+> 
+```
 
 
 
