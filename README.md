@@ -1606,7 +1606,7 @@ Details(age=36, name="Graham Jones")
 # Really!, you are  36 years old
 ```
 
-EXample 3
+Example 3
 
 ##### Default arguments
 
@@ -1636,7 +1636,48 @@ cat(addition(c=17, a=4),"\n")	#4+2+17 => 23
 # 23 
 ```
 
+##### Lazy evalution
 
+Lazy evaluation refers to the process of evaluation of function arguments only when they are needed by the function body.
+
+```r
+# {
+# 	'created_on' : 6 May 2017', 
+# 	'aim_of_rscript' : 'Lazy evaluation in R',
+# 	'coded_by' : 'Rishikesh Agrawani',
+# }
+
+#Example 1
+GetSquareCubeSum <- function(a, b) {
+	# b is not being used inside function body so no problem if we call the
+	# function with 1 parameter
+	return(a^2 + 3^3) 
+}
+
+cat(GetSquareCubeSum(4),"\n\n")		#27+16 => 43
+cat(GetSquareCubeSum(4,7), "\n\n")	#27+16 => 43
+
+
+#Example 2
+SquaredSum <- function(a, b) {
+	# Unlike above function, it is necessary to pass 2 values to this function
+	return(a^2 + b^2)
+}
+
+cat(SquaredSum( 4, 8 ),"\n\n")  	#16+64 = 80
+cat(SquaredSum( 4 ))	 		#Error
+
+
+# 43 
+
+# 43 
+
+# 80 
+
+# Error in SquaredSum(4) : argument "b" is missing, with no default
+# Calls: cat -> SquaredSum
+# Execution halted
+```
 
 
 # Focus
@@ -1733,3 +1774,22 @@ NULL
 
 > Call by position & Call by name
 
+> Lazy evalution
+
+```r
+> f <- function(a,b){
++   a^2
++ }
+> f(2)
+[1] 4
+> f(3)
+[1] 9
+> f <- function(a,b){
++   a^2 + b^3
++ }
+> f(3)
+Error in f(3) : argument "b" is missing, with no default
+> f(3,2)
+[1] 17
+> 
+```
