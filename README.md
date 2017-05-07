@@ -1718,7 +1718,9 @@ print(sentence2)
 # [1] "Orange is most famous in \"India\"."
 ```
 
-cat() function
+##### paste() function
+
+paste() function is used to print the string message to the console by combining the passed parameters.
 
 ```r
 # {
