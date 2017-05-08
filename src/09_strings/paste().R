@@ -1,5 +1,5 @@
 # {
-# 	'created_on' : 6 May 2017', 
+# 	'created_on' : 7 May 2017', 
 # 	'aim_of_rscript' : 'Using paste() function in R',
 # 	'coded_by' : 'Rishikesh Agrawani',
 # }
