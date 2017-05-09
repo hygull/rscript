@@ -43,5 +43,3 @@ details(display="lower" ,name="Pentonic Firix", age=45)
 # Your details :-
 # Name :-  pentonic firix 
 # Age  :-  45 
-
-
