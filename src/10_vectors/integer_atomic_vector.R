@@ -5,7 +5,7 @@
 # 	'coded_by' : 'Rishikesh Agrawani',
 # }
 
-#Atomic vectors of type integers
+#Atomic vectors of type integer
 integer.a <- 67L	#67 is legal integer vector
 integer.b <<- 56L	#56l is illegal, attach L to the int number 
 
