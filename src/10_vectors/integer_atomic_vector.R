@@ -28,9 +28,7 @@ print(evens.vect)
 cat("evens.vect[3L] = ",evens.vect[3L],"\n")
 print( evens.vect[ c(5L,10L,1L) ])	#5th, 10th & 1st even numbers from the evens.vect vector
 
-#Accessing vector elements using logical indexing 
-cat("evens.vect[3L] = ",evens.vect[3L],"\n")
-
+#Accessing vector elements using logical indexing
 #Vector recycling : c(TRUE,FALSE) => c(TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE) 
 print( evens.vect[ c(TRUE,FALSE) ])	#Printing even elements present at odd places
 print( evens.vect[ c(FALSE, TRUE)]) #Printing even elements present at even places
